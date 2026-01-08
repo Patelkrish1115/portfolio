@@ -7,6 +7,8 @@ import Index from "./pages/Index";
 import HireMe from "./pages/HireMe";
 import NotFound from "./pages/NotFound";
 
+import { SpeedInsights } from "@vercel/speed-insights/react";
+
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -14,6 +16,7 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
+      <SpeedInsights />
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />

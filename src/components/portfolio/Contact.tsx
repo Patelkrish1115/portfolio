@@ -1,4 +1,5 @@
-import { Mail, Github, Linkedin, MapPin, Phone, ArrowUpRight } from "lucide-react";
+import { Mail, Github, Linkedin, MapPin, Phone, ArrowUpRight, Briefcase } from "lucide-react";
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 
 const contactLinks = [
@@ -79,16 +80,28 @@ export function Contact() {
         </div>
 
         {/* CTA */}
-        <div className="text-center mt-12">
+        <div className="flex flex-col items-center gap-6 mt-12">
           <a href="mailto:krishpatel3213@gmail.com">
             <Button
               size="lg"
-              className="bg-gradient-to-r from-primary to-accent text-primary-foreground font-semibold hover:opacity-90 transition-opacity glow"
+              variant="outline"
+              className="border-primary/50 hover:bg-primary/10 transition-colors"
             >
               <Mail className="w-5 h-5 mr-2" />
               Send Me a Message
             </Button>
           </a>
+
+          <Link to="/hire-me">
+            <Button
+              size="lg"
+              className="bg-gradient-to-r from-primary to-accent text-white h-14 px-10 text-xl font-bold shadow-[0_0_20px_rgba(var(--primary),0.5)] hover:shadow-[0_0_30px_rgba(var(--primary),0.8)] hover:scale-[1.05] transition-all relative overflow-hidden group"
+            >
+              <Briefcase className="w-6 h-6 mr-2" />
+              <span className="relative z-10">Hire Me Now</span>
+              <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300" />
+            </Button>
+          </Link>
         </div>
       </div>
     </section>
