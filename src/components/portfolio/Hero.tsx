@@ -110,7 +110,7 @@ export function Hero() {
                 <Github className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors" />
               </a>
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/krishpatel1115?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-12 h-12 rounded-full glass flex items-center justify-center hover:bg-primary/20 hover:border-primary/50 transition-all duration-300 group"

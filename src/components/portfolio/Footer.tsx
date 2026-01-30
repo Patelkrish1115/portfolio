@@ -9,7 +9,7 @@ const quickLinks = [
 
 const socialLinks = [
   { icon: Github, href: "https://github.com", label: "GitHub" },
-  { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
+  { icon: Linkedin, href: "https://www.linkedin.com/in/krishpatel1115?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app", label: "LinkedIn" },
   { icon: Mail, href: "mailto:krishpatel3213@gmail.com", label: "Email" },
 ];
 

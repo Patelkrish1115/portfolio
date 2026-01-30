@@ -51,6 +51,22 @@ const certificates = [
     imagePath: "/uploads/certificates/The_Ultimate_Job_Ready_Data_Science_Course_Certificate (1).pdf",
     color: "from-indigo-500 to-purple-500",
   },
+  {
+    title: "Internship Offer Letter",
+    issuer: "Fox Trading / 1Stop.ai",
+    date: "Feb 2026",
+    icon: "📄",
+    imagePath: "/uploads/certificates/fox_trading_internship_offer.png",
+    color: "from-orange-500 to-red-500",
+  },
+  {
+    title: "Internship Terms & Details",
+    issuer: "Fox Trading / 1Stop.ai",
+    date: "Feb 2026",
+    icon: "📝",
+    imagePath: "/uploads/certificates/fox_trading_internship_details.png",
+    color: "from-blue-500 to-indigo-500",
+  },
 ];
 
 export function Achievements() {

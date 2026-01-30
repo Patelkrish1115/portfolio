@@ -28,6 +28,14 @@ const experience = [
     location: "Remote",
     current: true,
   },
+  {
+    title: "Data Science - Mentorship Intern",
+    company: "Fox Trading (via 1Stop.ai)",
+    period: "Feb 2026 - Present",
+    description: "Working on data analysis, machine learning models, and mentorship projects. Gaining hands-on experience in real-world data science applications.",
+    location: "Remote",
+    current: true,
+  },
 ];
 
 export function Career() {

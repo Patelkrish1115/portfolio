@@ -19,8 +19,8 @@ const contactLinks = [
   },
   {
     name: "LinkedIn",
-    value: "linkedin.com/in/patelkrish",
-    href: "https://linkedin.com",
+    value: "linkedin.com/in/krishpatel1115",
+    href: "https://www.linkedin.com/in/krishpatel1115?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     icon: Linkedin,
     color: "from-blue-500 to-blue-700",
   },
