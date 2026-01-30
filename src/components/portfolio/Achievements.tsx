@@ -52,20 +52,32 @@ const certificates = [
     color: "from-indigo-500 to-purple-500",
   },
   {
-    title: "Internship Offer Letter",
+    title: "Internship Offer & Terms",
     issuer: "Fox Trading / 1Stop.ai",
     date: "Feb 2026",
     icon: "📄",
-    imagePath: "/uploads/certificates/fox_trading_internship_offer.png",
-    color: "from-orange-500 to-red-500",
+    imagePath: "/uploads/certificates/fox_trading_internship_details.png", // Fallback/Thumbnail
+    images: [
+      "/uploads/certificates/fox_trading_internship_details.png",
+      "/uploads/certificates/fox_trading_internship_offer.png"
+    ],
+    color: "from-blue-500 to-indigo-500",
   },
   {
-    title: "Internship Terms & Details",
-    issuer: "Fox Trading / 1Stop.ai",
-    date: "Feb 2026",
-    icon: "📝",
-    imagePath: "/uploads/certificates/fox_trading_internship_details.png",
-    color: "from-blue-500 to-indigo-500",
+    title: "Synaptix Frontier AI Hack",
+    issuer: "IIT Madras (Shaastra 2026)",
+    date: "2026",
+    icon: "🤖",
+    imagePath: "/uploads/certificates/synaptix_frontier_ai_hack.png",
+    color: "from-blue-400 to-cyan-400",
+  },
+  {
+    title: "Hack4Delhi Participation",
+    issuer: "NSUT Delhi (Holiday Fest)",
+    date: "2025",
+    icon: "👨‍💻",
+    imagePath: "/uploads/certificates/hack4delhi.png",
+    color: "from-indigo-400 to-blue-500",
   },
 ];
 
@@ -205,6 +217,17 @@ export function Achievements() {
                     className="w-full h-full"
                     title={selectedCert.title}
                   />
+                ) : (selectedCert as any).images ? (
+                  <div className="w-full h-full overflow-y-auto p-4 space-y-4">
+                    {((selectedCert as any).images).map((img: string, idx: number) => (
+                      <img
+                        key={idx}
+                        src={img}
+                        alt={`${selectedCert.title} - ${idx + 1}`}
+                        className="w-full h-auto object-contain shadow-md rounded-sm"
+                      />
+                    ))}
+                  </div>
                 ) : (
                   <img
                     src={selectedCert.imagePath}
